@@ -1,15 +1,18 @@
-all: clean build_Main build_Test run_Test
+all: Clean BuildMain BuildTests RunTests
 
-build_Main: 1lab.c
-    mkdir -p FIRST/main
-    gcc -o FIRST/main/number 1lab.c -lm
+BuildMain:
+	mkdir -p bin/program
+	gcc -std=c89 -o bin/program/main main.c
 
-build_Test: test.c 1lab.c
-    mkdir -p FIRST/run_Test
-    gcc -o FIRST/test/number_test -Dmain=_1lab 1lab.c test.c -lm
+BuildTests:
+	mkdir -p bin/tests
+	gcc -std=c89 -o bin/tests/tests -Dmain=_main main.c tests.c
 
-run_Test:
-    ./FIRST/test/number_test
+RunProgram:
+	./bin/program/main
 
-clean:
-    rm -rf FIRST
+RunTests:
+	./bin/tests/tests
+
+Clean: 
+	rm -rf bin
