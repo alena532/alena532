@@ -1,0 +1,1 @@
+int Sum(int result);

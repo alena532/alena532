@@ -1,4 +1,4 @@
-#include "main.h"
+#include "1lab.h"
 #include <assert.h>
 #include<stdio.h>
 
@@ -12,7 +12,5 @@ void test(){
 #undef main
 int main(){
     test();
-    return 0;
 }
-
 
