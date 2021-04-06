@@ -1,18 +1,7 @@
-all: Clean BuildMain BuildTests RunTests
+all: BuildMain Tests
 
 BuildMain:
-	mkdir -p bin/program
-	gcc -std=c89 -o bin/program/main main.c
-
-BuildTests:
-	mkdir -p bin/tests
-	gcc -std=c89 -o bin/tests/tests -Dmain=_main main.c tests.c
-
-RunProgram:
-	./bin/program/main
-
-RunTests:
-	./bin/tests/tests
-
-Clean: 
-	rm -rf bin
+	gcc -o  main main.c -std=c89
+Tests:
+	./main
+	diff file.txt test.txt
