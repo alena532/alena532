@@ -3,6 +3,7 @@
 #include<fstream>
 #include"main.h"
 #include<vector>
+#include<cstring>
 using namespace std;
 List::List()
 {

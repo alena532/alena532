@@ -1,4 +1,5 @@
 #include<fstream>
+#include<cstring>
 struct Node
 {
     Node*previous;
