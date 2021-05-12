@@ -13,5 +13,6 @@ RunTests:
 	bgf/test
 	gcov -abcfu bgf/main.cpp
 
+
 Clean: 
 	rm -rf bin
