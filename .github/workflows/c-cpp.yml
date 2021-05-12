@@ -12,6 +12,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Fetch
+      uses: actions/checkout@master
     - uses: actions/checkout@v2
     - name: test and compile
       run: |
@@ -20,8 +22,8 @@ jobs:
         make
         cd ..
         done
-      - name: Upload
-        uses: codecov/codecov-action@v1
-        with:
-         files: |
+    - name: Upload
+      uses: codecov/codecov-action@v1
+      with:
+        files: |
           ./laba7/bgf/main.cpp.gcov
