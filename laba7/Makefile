@@ -1,17 +1,17 @@
 all: BuildMain BuildTests RunTests Clean
 
 BuildMain:
-	g++ -o bgf/main  bgf/main.cpp
+	g++ -o main main.cpp
 
 BuildTests:
-	g++ -ftest-coverage -fprofile-arcs -O0 -o bgf/test -Dmain=_main bgf/main.cpp bgf/test.cpp
+	g++ -ftest-coverage -fprofile-arcs -O0 -o test -Dmain=_main main.cpp test.cpp
 
 RunProgram:
-	bgf/main
+	main
 
 RunTests:
-	bgf/test
-	gcov -abcfu bgf/test.cpp
+	test
+	gcov -abcfu test.cpp
 
 
 Clean: 
