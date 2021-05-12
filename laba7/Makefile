@@ -7,10 +7,10 @@ BuildTests:
 	g++ -ftest-coverage -fprofile-arcs -O0 -o test -Dmain=_main main.cpp test.cpp
 
 RunProgram:
-	main
+	./main
 
 RunTests:
-	test
+	./test
 	gcov -abcfu test.cpp
 
 
