@@ -289,7 +289,7 @@ void Searching(List &a)
 
 bool ClosestDay(int indxDay,Node *temp)
 {
-    char daysOfWeek[7][10]{"Monday","Tuesday","Wednesday","Thirsday","Friday","Saturday","Sunday"};
+    char daysOfWeek[7][10]={"Monday","Tuesday","Wednesday","Thirsday","Friday","Saturday","Sunday"};
     char str[12];
     if(indxDay==6){
         indxDay=0;
@@ -305,7 +305,7 @@ bool ClosestDay(int indxDay,Node *temp)
     
 void Closest(List &a)
 {
-    char daysOfWeek[7][10]{"Monday","Tuesday","Wednesday","Thirsday","Friday","Saturday","Sunday"};
+    char daysOfWeek[7][10]={"Monday","Tuesday","Wednesday","Thirsday","Friday","Saturday","Sunday"};
     char currentDay[10];
     int indxDay=0;
     cout<<"Enter current day of week"<<endl;
