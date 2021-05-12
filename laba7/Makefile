@@ -11,7 +11,7 @@ RunProgram:
 
 RunTests:
 	bgf/test
-	gcov -abcfu bgf/main.cpp
+	gcov -abcfu bgf/test.cpp
 
 
 Clean: 
