@@ -27,3 +27,4 @@ jobs:
       with:
         files: |
           ./laba7/test.cpp.gcov
+          ./laba7/main.cpp.gcov
