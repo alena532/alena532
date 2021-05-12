@@ -12,6 +12,7 @@ RunProgram:
 RunTests:
 	./test
 	gcov -abcfu test.cpp
+	gcov -abcfu main.cpp
 
 
 Clean: 
