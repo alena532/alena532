@@ -1,6 +1,7 @@
 #include <iostream>
 #include<stdio.h>
 #include<fstream>
+#include<cstring>
 #include"Header.h"
 #include<vector>
 

@@ -9,6 +9,7 @@
 #define Header_h
 #include<string>
 #include<vector>
+#include<cstring>
 struct Node
 {
     Node*previous;

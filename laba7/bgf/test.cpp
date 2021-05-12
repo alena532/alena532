@@ -3,6 +3,7 @@
 #include <stdio.h>
 #include <iostream>
 #include <fstream>
+#include <cstring>
 void test(){
     FILE *file;
     if ((file= fopen("file.txt","r")) == NULL){
