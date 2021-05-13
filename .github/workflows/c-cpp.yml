@@ -28,3 +28,4 @@ jobs:
         files: |
           ./laba7/test.cpp.gcov
           ./laba7/main.cpp.gcov
+          ./laba7/Header.cpp.gcov
